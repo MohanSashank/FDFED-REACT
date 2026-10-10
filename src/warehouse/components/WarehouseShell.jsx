@@ -15,7 +15,10 @@ export default function WarehouseShell({
   toast,
 }) {
   return (
-    <div style={{ display: "flex", minHeight: "100vh" }}>
+    <div
+      className="warehouse-app"
+      style={{ display: "flex", minHeight: "100vh" }}
+    >
       {toast && (
         <div
           className={`toast${toast.isError ? " toast-error" : ""}`}
